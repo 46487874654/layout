@@ -56,7 +56,7 @@ h1 {
   font-size: 14px;
 }
 
-.btn-edit {
+.btn-edit, .btn-request {
   background-color: #007bff;
 }
 
