@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Логотип компании"></a>
+        </div>  
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>  
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <div class="dropbtn">Город</div>
+                <div class="dropdown-content">
+                    <a href="#">Москва</a>
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Нижний Новгород</a>
+                </div>
+            </div>  
+            <a href="stocks.html">Акции</a>
+            <p class="phone">8 (800) 111-11-11</p>
+            <a href="programs.html">Программа</a>
+            <a href="workers.html">Сотрудники</a>
+            <a href="locations.html">Локации</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="login.html" class="login">Войти</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+    <h1>Личный кабинет пользователя</h1>
+    
+    <div class="user-info">
+        <div><strong>Имя:</strong> <samp сlass="name">Иван</samp></div>
+        <div><strong>Фамилия:</strong> <samp class="surname">Иванов</samp></div>
+        <div><strong>Отчество:</strong> <samp class="patronymic">Иванович</samp></div>
+        <div><strong>Количество заказанных мероприятий:</strong> <samp class="quantity">2</samp></div>
+    </div>
+
+    <div class="buttons">
+        <a class="btn-edit">Редактировать данные</a>
+        <a href="applicationevent.html" class="btn-request">Оставить заявку на мероприятие</a>
+        <a class="btn-logout">Выйти</a>
+    </div>
+
+    <div class="events-section">
+        <h2>Ваши мероприятия</h2>
+        
+        <div class="event-card">
+            <img src="assets/images/events/event1.jpg" alt="Фото мероприятия">
+            <div class="event-details">
+                <div><strong>Город:</strong> Москва</div>
+                <div><strong>Название:</strong> Корпоратив для компании</div>
+                <div><strong>Дата и время проведения:</strong> 15 сентября 2023, 18:00</div>
+                <div><strong>Описание:</strong> Корпоратив с участием ведущего и аниматоров.</div>
+                <div><strong>Итоговая стоимость:</strong> 150,000 ₽</div>
+            </div>
+            <button class="btn-review"><a href="reviews.html">Оставить отзыв</a></button>
+        </div>
+
+        <div class="event-card">
+            <img src="assets/images/events/event3.jpg" alt="Фото мероприятия">
+            <div class="event-details">
+                <div><strong>Город:</strong> Санкт-Петербург</div>
+                <div><strong>Название:</strong> Детский праздник</div>
+                <div><strong>Дата и время проведения:</strong> 20 августа 2023, 12:00</div>
+                <div><strong>Описание:</strong> Тематический детский праздник с аниматорами.</div>
+                <div><strong>Итоговая стоимость:</strong> 50,000 ₽</div>
+            </div>
+            <button class="btn-review"><a href="/reviews.html">Оставить отзыв</a></button>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Агентство событий" /></a>
+        </div>
+        <div class="footer-nav">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="stocks.html">Акции</a></li>
+                <li><a href="programs.html">Программы</a></li>
+                <li><a href="workers.html">Сотрудники</a></li>
+                <li><a href="locations.html">Локации</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Связь</h4>
+            <p>Телефон: <a href="tel:88001111111">8 (800) 111-11-11</a></p>
+            <p>Email: <a href="mailto:info@agency.com">info@agency.com</a></p>
+            <p><a href="https://t.me/agency">Telegram</a></p>
+            <p><a href="https://vk.com/agency">VK</a></p>
+            <p><a href="https://wa.me/88001111111">WhatsApp</a></p>
+        </div>
+        <div class="footer-city">
+            <h4>Выбор города</h4>
+            <select name="city">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="nn">Нижний Новгород</option>
+            </select>
+        </div>
+    </div>
+    <div class="footer-end">
+        <p>&copy; 2024 Агентство событий</p>
+    </div>
+</footer>   
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на мероприятие</title>
+    <link rel="stylesheet" href="assets/css/event.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Логотип компании"></a>
+        </div>  
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>  
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <div class="dropbtn">Город</div>
+                <div class="dropdown-content">
+                    <a href="#">Москва</a>
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Нижний Новгород</a>
+                </div>
+            </div>  
+            <a href="stocks.html">Акции</a>
+            <p class="phone">8 (800) 111-11-11</p>
+            <a href="programs.html">Программа</a>
+            <a href="workers.html">Сотрудники</a>
+            <a href="locations.html">Локации</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="login.html" class="login">Войти</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <h1>Заявка на мероприятие</h1>
+    <div class="container">        
+        <form action="event" method="POST">
+            <label for="user_name">ФИО пользователя</label>
+            <input type="text" name="user_name" placeholder="Иванов Иван Иванович" required>
+            <label for="birth_date">Дата рождения</label>
+            <input type="date" name="birth_date" required>
+            <label for="category">Категория мероприятия</label>
+            <select name="category" required>
+                <option value="" disabled selected>Выберите категорию</option>
+                <option value="corporate">Корпоратив</option>
+                <option value="wedding">Свадьба</option>
+                <option value="birthday">День рождения</option>
+            </select>
+            <label for="program">Программа</label>
+            <select name="program" required>
+                <option value="" disabled selected>Выберите программу</option>
+                <option value="basic">Базовая</option>
+                <option value="premium">Премиум</option>
+                <option value="vip">VIP</option>
+            </select>
+            <label for="location">Локация</label>
+            <select name="location" required>
+                <option value="" disabled selected>Выберите локацию</option>
+                <option value="hall1">Event Hall</option>
+                <option value="hall2">Клуб "Весна"</option>
+                <option value="outdoor">На открытом воздухе</option>
+            </select>
+            <label for="staff">Сотрудники</label>
+            <div class="selection-container">
+                <label class="card">
+                    <input type="checkbox" name="staff" value="staff1">
+                    <div class="card-content">
+                        <img src="/assets/images/employee/employee1.jpg" alt="Иван Иванов">
+                        <p>Иван Иванов</p>
+                    </div>
+                </label>
+            
+                <label class="card">
+                    <input type="checkbox" name="staff" value="staff2">
+                    <div class="card-content">
+                        <img src="/assets/images/employee/employee2.jpg" alt="Анна Смирнова">
+                        <p>Анна Смирнова</p>
+                    </div>
+                </label>
+            
+                <label class="card">
+                    <input type="checkbox" name="staff" value="staff3">
+                    <div class="card-content">
+                        <img src="/assets/images/employee/employee3.jpg" alt="Сергей Ковалев">
+                        <p>Сергей Ковалев</p>
+                    </div>
+                </label>
+            </div>
+            <label for="guest_count">Количество человек</label>
+            <input type="number" name="guest_count" placeholder="Введите количество гостей" required>
+            <label for="event_date">Дата мероприятия</label>
+            <input type="date" name="event_date" required>
+            <label for="event_time">Время мероприятия</label>
+            <input type="time" name="event_time" required>
+            <label for="promo">Акция</label>
+            <select name="promo">
+                <option value="" disabled selected>Выберите акцию</option>
+                <option value="discount10">Скидка 10%</option>
+                <option value="discount20">Скидка 20%</option>
+                <option value="none">Без акции</option>
+            </select>
+            <label for="total_cost">Итоговая стоимость</label>
+            <input type="text" name="total_cost" placeholder="Введите итоговую стоимость" readonly>
+            <div class="actions">
+                <button class="btn btn-edit">Редактировать</button>
+                <button type="submit" class="btn btn-save">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Агентство событий" /></a>
+        </div>
+        <div class="footer-nav">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="stocks.html">Акции</a></li>
+                <li><a href="programs.html">Программы</a></li>
+                <li><a href="workers.html">Сотрудники</a></li>
+                <li><a href="locations.html">Локации</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Связь</h4>
+            <p>Телефон: <a href="tel:88001111111">8 (800) 111-11-11</a></p>
+            <p>Email: <a href="mailto:info@agency.com">info@agency.com</a></p>
+            <p><a href="https://t.me/agency">Telegram</a></p>
+            <p><a href="https://vk.com/agency">VK</a></p>
+            <p><a href="https://wa.me/88001111111">WhatsApp</a></p>
+        </div>
+        <div class="footer-city">
+            <h4>Выбор города</h4>
+            <select name="city">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="nn">Нижний Новгород</option>
+            </select>
+        </div>
+    </div>
+    <div class="footer-end">
+        <p>&copy; 2024 Агентство событий</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  font-size: 0.9rem;
+  width: auto;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1 1 150px;
+}
+
+.footer-logo{
+  flex: 1px;
+}
+
+.footer-logo img {
+  width: 45px;
+  height: auto;
+  
+}
+
+.footer-nav, .footer-contact, .footer-city {
+  flex: 1 1 150px;
+}
+
+.footer-nav h4, .footer-contact h4, .footer-city h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-nav ul, .footer-contact ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer-nav ul li, .footer-contact ul li {
+  margin-bottom: 5px;
+}
+
+.footer-nav ul li a, .footer-contact p a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover, .footer-contact p a:hover {
+  color: #fff;
+}
+
+.footer-city select {
+  width: 100%;
+  padding: 5px;
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.footer-end {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 30px;
+}

@@ -1,0 +1,109 @@
+/* --------Шапка сайта-------- */
+header {
+  background-color: #333333;
+  padding: 15px 0;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cfcece;
+  outline: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: #555555;
+  border-radius: 4px;
+}
+
+.phone {
+  color: #ffa500;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.login {
+  background-color: #ffa500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+a[class='login']:hover {
+  background-color: #ff8c00;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #5a5a5a;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #535353;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #666565;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

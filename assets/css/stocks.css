@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; 
+  margin: 0;
+  padding: 0;
+  color: #333;  
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks-container {
+  
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.stock-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.stock-card:hover {
+  transform: scale(1.02);
+}
+
+.stock-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.stock-info {
+  padding: 15px;
+  min-height: 100px;
+}
+.stock-info p{
+  min-height: 60px;
+}
+.stock-info h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #4a90e2;
+}
+
+.stock-info p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.price-info {
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.new-price {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.details-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #357abd;
+}

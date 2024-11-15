@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программы</title>
+    <link rel="stylesheet" href="assets/css/programs.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Логотип компании"></a>
+        </div>  
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+        </div>  
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <div class="dropbtn">Город</div>
+                <div class="dropdown-content">
+                    <a href="#">Москва</a>
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Нижний Новгород</a>
+                </div>
+            </div>  
+            <a href="stocks.html">Акции</a>
+            <p class="phone">8 (800) 111-11-11</p>
+            <a href="programs.html">Программа</a>
+            <a href="workers.html">Сотрудники</a>
+            <a href="locations.html">Локации</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="login.html" class="login">Войти</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="programs-container">
+        <h1>Наши программы</h1>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="assets/images/events/event2.jpg" alt="Программа 1">
+                </div>
+                <div class="program-info">
+                    <h3>Праздничное шоу</h3>
+                    <p>Невероятное шоу с участием профессиональных артистов и спецэффектами.</p>
+                    <a href="program1-details.html" class="details-button">Подробнее</a>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="assets/images/events/event1.jpg" alt="Программа 2">
+                </div>
+                <div class="program-info">
+                    <h3>Квест для детей</h3>
+                    <p>Захватывающий квест с аниматорами и призами для детей.</p>
+                    <a href="program2-details.html" class="details-button">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo; Предыдущая</a>
+            <a href="programs_page1.html" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая &raquo;</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Агентство событий" /></a>
+        </div>
+        <div class="footer-nav">
+            <h4>Навигация</h4>
+            <ul>
+                <li><a href="stocks.html">Акции</a></li>
+                <li><a href="programs.html">Программы</a></li>
+                <li><a href="workers.html">Сотрудники</a></li>
+                <li><a href="locations.html">Локации</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Связь</h4>
+            <p>Телефон: <a href="tel:88001111111">8 (800) 111-11-11</a></p>
+            <p>Email: <a href="mailto:info@agency.com">info@agency.com</a></p>
+            <p><a href="https://t.me/agency">Telegram</a></p>
+            <p><a href="https://vk.com/agency">VK</a></p>
+            <p><a href="https://wa.me/88001111111">WhatsApp</a></p>
+        </div>
+        <div class="footer-city">
+            <h4>Выбор города</h4>
+            <select name="city">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="nn">Нижний Новгород</option>
+            </select>
+        </div>
+    </div>
+    <div class="footer-end">
+        <p>&copy; 2024 Агентство событий</p>
+    </div>
+</footer>
+
+</body>
+</html>
